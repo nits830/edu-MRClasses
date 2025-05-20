@@ -4,9 +4,9 @@ const { adminLogin, userLogin } = require('../controllers/authController');
 const { validateAdmin } = require('../models/Admin');
 
 // Admin routes
-router.post('/admin/login', adminLogin);
+router.post('/admin', adminLogin);
 
 // User routes
-router.post('/user/login', userLogin);
+router.post('/user', userLogin);
 
 module.exports = router; 
